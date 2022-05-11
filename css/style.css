@@ -1,0 +1,66 @@
+/* reset css */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* common css property */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* start first header left placement and construction */
+
+header:first-of-type {
+    display: flex;
+    text-transform: uppercase;
+    margin-left: 5%;
+    width: 27%;
+}
+
+header:first-of-type nav ul:first-of-type {
+    display: flex;
+    background: url(../images/main/logo.png) no-repeat;
+    width: 13%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    height: 25px;
+}
+
+/* end first header left placement and construction */
+main {
+    border: 1px solid red;
+    width: 100%;
+    height: 70vh;
+}
