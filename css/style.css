@@ -14,6 +14,7 @@ ul {
 /* common css property */
 
 body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     background-color: black;
     color: white;
 }
@@ -24,43 +25,146 @@ header {
 }
 
 a {
-    color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 200;
 }
 
-/* start first header left placement and construction */
+/* top header placement bloc */
 
-header:first-of-type {
+.top_header {
     display: flex;
-    text-transform: uppercase;
-    margin-left: 5%;
-    width: 27%;
-}
-
-header:first-of-type nav ul:first-of-type {
-    display: flex;
-    background: url(../images/main/logo.png) no-repeat;
-    width: 13%;
-}
-
-nav {
-    display: flex;
-    width: 100%;
-    height: 40px;
     justify-content: space-between;
-    align-items: center;
 }
 
-a {
+/* top header left placement and construction */
+
+.header_top_left_nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 35px;
+    width: 625px;
+}
+
+li {
     display: flex;
     align-items: center;
-    height: 25px;
 }
 
-/* end first header left placement and construction */
-main {
-    border: 1px solid red;
+.arenanet_logo {
+    display: flex;
+    background-image: url(../images/main/logo.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 30px;
+    margin-left: 40px;
+}
+
+.header_top_left_nav a {
+    color: rgba(255, 255, 255, 0.856);
+    text-transform: uppercase;
+}
+
+.header_top_left_nav a:hover {
+    color: rgba(255, 0, 0, 0.85);
+}
+
+/* top header right placement and construction */
+.header_top_right_nav {
+    display: flex;
+    height: 35px;
+    width: 150px;
+    margin-right: 60px;
+    justify-content: space-evenly;
+}
+
+.header_top_right_nav a {
+    color: rgba(255, 255, 255, 0.751);
+    text-transform: uppercase;
+}
+
+a span {
+    margin-left: 10px;
+}
+
+/* bottom header background placement */
+
+.bottom_header {
+    background-image: url(../images/main/header_background.jpg);
     width: 100%;
-    height: 70vh;
+    height: 60px;
+}
+
+/* bottom left header social network placement */
+
+.bottom_header_left {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 60px;
+    width: 550px;
+}
+
+.fb_icon {
+    display: flex;
+    background-image: url(../images/favicon/fb_icon_white.png);
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+}
+
+.twitter_icon {
+    background-image: url(../images/favicon/twitter_icon_white.png);
+    width: 30px;
+    height: 30px;
+}
+
+.fb_icon:hover {
+    background-color: blue;
+}
+
+.twitter_icon:hover {
+    background-color: rgb(0, 255, 255);
+}
+
+
+
+/* bottom right header text placement */
+
+.bottom_header_right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 60px;
+    width: 850px;
+}
+
+.bottom_header_right .twitter_icon {
+    margin-left: 50px;
+}
+
+.bottom_header_right a {
+    font-family: "calibri";
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 50px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.bottom_header_right a:hover {
+    color: rgb(193, 142, 2);
+}
+
+/* start main website content and placement */
+main {
+    height: 950px;
+    background-image: url("../images/main/background_image_body.png"), url("../images/main/background_image_footer.jpg");
+    background-repeat: no-repeat;
+}
+
+/* footer content and placement */
+footer {
+    height: 220px;
+
 }
