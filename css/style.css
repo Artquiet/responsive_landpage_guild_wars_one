@@ -12,7 +12,6 @@ ul {
 }
 
 /* common css property */
-
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     background-color: black;
@@ -31,14 +30,12 @@ a {
 }
 
 /* top header placement bloc */
-
 .top_header {
     display: flex;
     justify-content: space-between;
 }
 
 /* top header left placement and construction */
-
 .header_top_left_nav {
     display: flex;
     justify-content: space-evenly;
@@ -49,6 +46,10 @@ a {
 li {
     display: flex;
     align-items: center;
+}
+
+li span {
+    margin-left: 10px;
 }
 
 .arenanet_logo {
@@ -65,7 +66,8 @@ li {
     text-transform: uppercase;
 }
 
-.header_top_left_nav a:hover {
+.header_top_left_nav a:hover,
+.red_color:hover {
     color: rgba(255, 0, 0, 0.85);
 }
 
@@ -88,7 +90,6 @@ a span {
 }
 
 /* bottom header background placement */
-
 .bottom_header {
     background-image: url(../images/main/header_background.jpg);
     width: 100%;
@@ -96,7 +97,6 @@ a span {
 }
 
 /* bottom left header social network placement */
-
 .bottom_header_left {
     display: flex;
     align-items: center;
@@ -107,30 +107,31 @@ a span {
 
 .fb_icon {
     display: flex;
-    background-image: url(../images/favicon/fb_icon_white.png);
+    background-image: url(../images/favicon/fb_white.png);
     width: 30px;
     height: 30px;
     margin-left: 25px;
 }
 
 .twitter_icon {
-    background-image: url(../images/favicon/twitter_icon_white.png);
+    background-image: url(../images/favicon/twitter_white.png);
     width: 30px;
     height: 30px;
 }
 
 .fb_icon:hover {
-    background-color: blue;
+    background-image: url(../images/favicon/fb_color.png);
+    width: 30px;
+    height: 30px;
 }
 
 .twitter_icon:hover {
-    background-color: rgb(0, 255, 255);
+    background-image: url(../images/favicon/twitter_color.png);
+    width: 30px;
+    height: 30px;
 }
 
-
-
 /* bottom right header text placement */
-
 .bottom_header_right {
     display: flex;
     align-items: center;
@@ -166,5 +167,52 @@ main {
 /* footer content and placement */
 footer {
     height: 220px;
+}
 
+/* navigation website after header */
+/* nav placement */
+nav.link_website {
+    display: flex;
+    height: 30px;
+    width: 83%;
+    justify-content: end;
+}
+
+/* ul li button separation placement */
+nav.link_website ul {
+    display: flex;
+    height: 25px;
+    width: 650px;
+    justify-content: space-evenly;
+}
+
+/* button design */
+nav.link_website ul li {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(44, 12, 7);
+    border-left: 1px solid rgba(193, 142, 2, 0.36);
+    border-right: 1px solid rgb(193, 142, 2, 0.36);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 10px;
+}
+
+/* text design and finalisation */
+nav.link_website ul li a {
+    font-family: "calibri";
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: 400;
+}
+
+nav.link_website ul li a:hover {
+    color: rgb(193, 142, 2);
+}
+
+/* background image text guild wars */
+
+h1 {
+    color: red;
 }
