@@ -1,3 +1,6 @@
+/*----------------------------------------------------*/
+/* this is the common template for all site web pages */
+/*----------------------------------------------------*/
 /* reset css */
 *,
 ::before,
@@ -210,13 +213,13 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 85%;
     height: 200px;
     margin-top: 2%;
 }
 
 div.gw_logo {
-    width: 650px;
+    width: 600px;
     height: 175px;
     background-image: url(../images/main/gw2-logo.664f0cfa.png);
     background-repeat: no-repeat;

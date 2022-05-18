@@ -1,7 +1,25 @@
-/* main grid after guild wars logo  */
+/* main bloc after guild wars logo  */
+.home {
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid orangered;
+    width: 1000px;
+    height: 620px;
+    margin: auto;
+}
 
-section {
-    border: 3px solid red;
-    height: 300px;
-    width: 500px;
+/* grid placement and creation left side main section */
+.home_left {
+    display: grid;
+    border: 4px solid green;
+    height: 550px;
+    width: 675px;
+}
+
+/* flex placement and creation right side main section */
+.home_right {
+    display: flex;
+    border: 4px solid rgb(0, 98, 255);
+    height: 600px;
+    width: 250px;
 }
