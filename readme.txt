@@ -17,3 +17,8 @@ Implémentation CSS
 
 
 font-family: 'Yanone Kaffeesatz', sans-serif;
+
+
+J'ai également utilisé cette police pour pouvoir adapté certaines polices en thermes de longueur et histoire d'en avoir deux : 
+
+font-family: 'Calibri', sans-serif;
