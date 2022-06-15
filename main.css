@@ -1,0 +1,396 @@
+/*----------------------------------------------------*/
+/* this is the common template for all site web pages */
+/*----------------------------------------------------*/
+/* reset css */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* common css property */
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/* top header placement bloc */
+.top_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header.top_header a:hover {
+    color: red;
+}
+
+/* top header left placement and construction */
+.header_top_left_nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 35px;
+    width: 625px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li span {
+    margin-left: 10px;
+}
+
+.arenanet_logo {
+    display: flex;
+    background-image: url(../images/main/logo.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 30px;
+    margin-left: 40px;
+}
+
+.header_top_left_nav a {
+    color: rgba(255, 255, 255, 0.856);
+    text-transform: uppercase;
+}
+
+.header_top_left_nav a:hover,
+.red_color:hover {
+    color: rgba(255, 0, 0, 0.85);
+}
+
+/* top header right placement and construction */
+.header_top_right_nav {
+    display: flex;
+    height: 35px;
+    width: 150px;
+    margin-right: 60px;
+    justify-content: space-evenly;
+}
+
+.header_top_right_nav a {
+    color: rgba(255, 255, 255, 0.751);
+    text-transform: uppercase;
+}
+
+a span {
+    margin-left: 10px;
+}
+
+/* bottom header background placement */
+.bottom_header {
+    background-image: url(../images/main/header_background.jpg);
+    width: 100%;
+    height: 60px;
+}
+
+/* bottom left header social network placement */
+.bottom_header_left {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 60px;
+    width: 550px;
+}
+
+.fb_icon {
+    display: flex;
+    background-image: url(../images/favicon/fb_white.png);
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+}
+
+.twitter_icon {
+    background-image: url(../images/favicon/twitter_white.png);
+    width: 30px;
+    height: 30px;
+}
+
+.fb_icon:hover {
+    background-image: url(../images/favicon/fb_color.png);
+    width: 30px;
+    height: 30px;
+}
+
+.twitter_icon:hover {
+    background-image: url(../images/favicon/twitter_color.png);
+    width: 30px;
+    height: 30px;
+}
+
+/* bottom right header text placement */
+.bottom_header_right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 60px;
+    width: 850px;
+}
+
+.bottom_header_right .twitter_icon {
+    margin-left: 50px;
+}
+
+.bottom_header_right a {
+    font-family: "calibri";
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 50px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.bottom_header_right a:hover {
+    color: rgb(193, 142, 2);
+}
+
+/* start main website content and placement */
+main {
+    height: 920px;
+    background-image: url("../images/main/background_image_body.png"), url("../images/main/background_image_footer.jpg");
+    background-repeat: no-repeat;
+}
+
+/* disposition nav and button */
+main nav {
+    display: flex;
+    justify-content: end;
+    height: 22px;
+    width: 76%;
+}
+
+main nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    height: 22px;
+    width: 665px;
+}
+
+main nav a {
+    font-family: "Calibri";
+    display: flex;
+    color: white;
+    font-weight: 400;
+}
+
+/* background image button placement */
+div.left_triangle_button {
+    width: 18px;
+    height: 22px;
+    background-image: url(../images/favicon/left_triangle.png);
+}
+
+div.rectangle_button {
+    width: auto;
+    height: 22px;
+    background-image: url(../images/favicon/rectangle.png);
+}
+
+div.rectangle_button:hover {
+    color: rgb(193, 142, 2);
+}
+
+div.right_triangle_button {
+    width: 18px;
+    height: 22px;
+    background-image: url(../images/favicon/right_triangle.png);
+}
+
+/* main background image text guild wars */
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 200px;
+    margin-top: 2%;
+}
+
+div.gw_logo {
+    width: 600px;
+    height: 175px;
+    background-image: url(../images/main/gw2-logo.664f0cfa.png);
+    background-repeat: no-repeat;
+}
+
+/* footer */
+footer {
+    height: 200px;
+    width: 100%;
+}
+
+/* footer top nav flexbox */
+.top_nav_footer {
+    display: flex;
+    height: 80px;
+    width: 610px;
+    margin-left: 5%;
+}
+
+.top_nav_footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top_nav_footer ul li {
+    display: flex;
+}
+
+.top_nav_footer ul li a {
+    color: rgba(255, 255, 255, 0.635);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.top_nav_footer ul li a:hover {
+    color: rgba(255, 0, 0, 0.85);
+}
+
+.top_nav_footer .separate {
+    display: flex;
+    width: 1px;
+    height: 25px;
+    margin-bottom: 10px;
+    background-color: red;
+}
+
+/* footer bottom nav grid */
+/* ---------------------- */
+/* grid nav creation */
+.bottom_nav_footer {
+    display: grid;
+    height: 120px;
+    width: 92%;
+    margin: auto;
+}
+
+/* grid disposition and elements  grid */
+.bottom_nav_footer_grid {
+    display: grid;
+    grid-template-columns: 75px 150px 1fr 250px;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* logo nc soft white creation and placement */
+.nc_logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.nc_logo a {
+    display: grid;
+    background-image: url(../images/main/nc_logo.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 30px;
+}
+
+/* logo arena net white creation and placement */
+.arenanet_logo_white {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.arenanet_logo_white a {
+    display: grid;
+    background-image: url(../images/main/arenanet_logo_white.svg);
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 50px;
+}
+
+/* jurisdictions mentions */
+.legals_mentions {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.legals_mentions ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 525px;
+}
+
+.legals_mentions ul li a {
+    font-family: "Calibri";
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.633);
+}
+
+.legals_mentions ul li a:hover {
+    color: red;
+}
+
+.pipe {
+    background-color: rgba(255, 255, 255, 0.633);
+    width: 1px;
+    height: 18px;
+}
+
+/* copyright arenanet guild wars one */
+.copyright {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.copyright em {
+    font-family: "Calibri";
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.633);
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+/* logo prevention creation and placement */
+.pegi_warning {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.pegi_warning a {
+    display: grid;
+    background-image: url(../images/main/pegi_warning.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 175px;
+    height: 50px;
+}
